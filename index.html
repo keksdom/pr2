@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Конвертер валют та величин</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>Конвертер</h1>
+<div class="tabs">
+<div class="tab active" id="currency-tab">Валюти</div>
+<div class="tab" id="units-tab">Величини</div>
+</div>
+
+<div class="section active" id="currency-section">
+<input type="number" id="amount" placeholder="Сума" />
+<select id="fromCurrency">
+<option value="USD">USD</option>
+<option value="EUR">EUR</option>
+<option value="GBP">GBP</option>
+<option value="CAD">CAD</option>
+<option value="UAH">UAH</option>
+</select>
+<select id="toCurrency">
+<option value="UAH">UAH</option>
+<option value="USD">USD</option>
+<option value="EUR">EUR</option>
+<option value="GBP">GBP</option>
+<option value="CAD">CAD</option>
+</select>
+<button onclick="convertCurrency()">Конвертувати</button>
+<p id="currencyResult"></p>
+</div>
+
+<div class="section" id="units-section">
+<input type="number" id="value" placeholder="Значення" />
+<select id="fromUnit">
+<option value="m">Метри</option>
+<option value="km">Кілометри</option>
+<option value="cm">Сантиметри</option>
+<option value="mi">Милі</option>
+<option value="kg">Кілограми</option>
+<option value="g">Грами</option>
+</select>
+<select id="toUnit">
+<option value="cm">Сантиметри</option>
+<option value="m">Метри</option>
+<option value="km">Кілометри</option>
+<option value="mi">Милі</option>
+<option value="kg">Кілограми</option>
+<option value="g">Грами</option>
+</select>
+<button onclick="convertUnits()">Конвертувати</button>
+<p id="unitResult"></p>
+</div>
+</div>
+
+<script src="jscript.js"></script>
+</body>
+</html>
